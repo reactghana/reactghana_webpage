@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Join us</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="bulma/css/bulma.min.css" />
+    <link rel="stylesheet" href="fontawesome/css/all.css" />
+
+    <style>
+      .body {
+        background-image: url("img/china.png");
+        background-size: cover;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0px;
+        left: 0;
+        overflow: hidden;
+      }
+      .bg {
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.6);
+        background-position: center center;
+        position: absolute;
+        top: 0px;
+        left: 0;
+      }
+      @media screen and (min-width: 800px) {
+        .login-modal {
+          width: 500px;
+          height: 500px;
+          background-color: rgba(255, 255, 255, 0.2);
+          z-index: 10;
+          position: absolute;
+          text-align: center;
+          left: 30%;
+          top: 10%;
+          position: fixed;
+          overflow: hidden;
+          border-radius: 20px;
+          backdrop-filter: blur(5px);
+        }
+      }
+      @media screen and (max-width: 800px) {
+        .login-modal {
+          height: 500px;
+          background-color: rgba(255, 255, 255, 0.2);
+          z-index: 10;
+          text-align: center;
+          left: 0px;
+          margin-top: 70px;
+          overflow: hidden;
+          border-radius: 20px;
+          backdrop-filter: blur(5px);
+        }
+      }
+      .portrait {
+        width: 90px;
+        height: 90px;
+        border-radius: 100px;
+        margin-top: 30px;
+      }
+
+      #lgin {
+        font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+        margin-top: 25px;
+        border: 10px;
+        color: whitesmoke;
+      }
+      #txt {
+        margin-top: 20px;
+        width: 250px;
+        color: whitesmoke;
+      }
+      .fp {
+        padding: 10px;
+      }
+      a {
+        color: white;
+      }
+      span {
+        color: cyan;
+      }
+      #txtt {
+        border-bottom-width: 10px;
+        border-left-width: none;
+        border-right-width: none;
+        border-top-width: none;
+      }
+      #cam {
+        margin-top: 100px;
+        font-size: 35px;
+        color: rgba(240, 248, 255, 0.336);
+      }
+
+      .bg-modal {
+        width: 100%;
+        height: 125%;
+        background-color: rgba(0, 0, 0, 0.7);
+        position: fixed;
+        top: 0;
+        overflow: hidden;
+        z-index: 10;
+        display: none;
+      }
+      #notes {
+        padding: 10px;
+        font-size: 15px;
+      }
+      .modal-content {
+        width: 300px;
+        height: 300px;
+        background-color: white;
+        border-radius: 5px;
+        text-align: center;
+        padding: 20px;
+        position: relative;
+        margin-top: 100px;
+        overflow: hidden;
+      }
+      @media screen and (max-width: 800px) {
+        .modal-content {
+          position: fixed;
+          margin-left: 45px;
+          margin-top: 50%;
+          overflow: none;
+        }
+      }
+      .close {
+        position: absolute;
+        top: 0;
+        right: 14px;
+        font-size: 42px;
+        margin-top: 10px;
+        margin-left: 15px;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="body">
+      <div class="bg">
+        <div class="login-modal">
+          <div class="img-r">
+            <img src="img/react.png" class="portrait" />
+          </div>
+
+          <form
+            id="myform"
+            accept-charset="UTF-8"
+            action="https://usebasin.com/f/baf926871f06"
+            method="POST"
+          >
+            <div class="">
+              <div>
+                <input
+                  id="txt"
+                  class="input is-primary"
+                  type="text"
+                  name="name"
+                  placeholder="Fullname..."
+                  style="background-color: rgba(211, 211, 211, 0.158);"
+                />
+              </div>
+              <div>
+                <input
+                  id="txt"
+                  class="input is-primary"
+                  type="text"
+                  name="email"
+                  placeholder="Email..."
+                  style="background-color: rgba(211, 211, 211, 0.158);"
+                />
+              </div>
+              <div>
+                <input
+                  id="txt"
+                  class="input is-primary"
+                  name="twitter"
+                  type="text"
+                  placeholder="Twitter..."
+                  style="background-color: rgba(211, 211, 211, 0.158);"
+                />
+              </div>
+              <div>
+                <textarea
+                  id="txt"
+                  class="input is-primary"
+                  name="twitter"
+                  type="textarea"
+                  placeholder="Why do you want to join?"
+                  style="background-color: rgba(211, 211, 211, 0.158); height: 80px;"
+                  maxlength="150;"
+                  aria-multiline="true"
+                ></textarea>
+              </div>
+              <div>
+                <div
+                  id="lgin"
+                  class="button is-primary is-large is-focused is-rounded"
+                  type="text"
+                  onclick="modal()"
+                >
+                  Submit
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <div class="bg-modal">
+      <div class="modal-content">
+        <p class="title has-text-danger">Hi Coder!</p>
+        <article>
+          <p>
+            We are happy you want to join and help contribute to the web.
+          </p>
+          <br />
+
+          <br />
+          <div id="notes" class="has-text-danger title is-7">
+            <strong><i class="fa fa-heart"></i></strong> Welcome. We will
+            contact you soon after this.
+          </div>
+        </article>
+
+        <div class="close delete" onclick="closemodal()"></div>
+
+        <button
+          type="submit"
+          form="myform"
+          class="button is-danger is-outlined"
+          value="Submit"
+        >
+          Accept <i class="fa fa-handshake"></i>
+        </button>
+      </div>
+    </div>
+
+    <script>
+      //Modal Screen
+
+      function modal() {
+        document.querySelector(".bg-modal").style.display = "block";
+      }
+      function closemodal() {
+        document.querySelector(".bg-modal").style.display = "none";
+      }
+    </script>
+  </body>
+</html>

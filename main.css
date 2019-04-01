@@ -1,0 +1,120 @@
+body {
+  background-color: #282c34;
+  height: 100%;
+  display: block;
+}
+.img-div {
+  display: absolute;
+  float: left;
+  top: 20px;
+  left: 45%;
+  text-align: center;
+}
+@media screen and (max-width: 800px) {
+  .img-div {
+    left: 35%;
+  }
+  .section2 {
+    margin: 30px;
+  }
+  .section3 {
+    margin: 30px;
+    margin-top: 90px;
+  }
+  .section2-mobile {
+    display: none;
+  }
+  .topbar {
+    padding-left: 20px;
+    font-size: 22px;
+  }
+  .links {
+    float: right;
+    padding-right: 20px;
+    font-size: 22px;
+  }
+}
+/* Unusual Screen Size */
+/* @media screen and (min-width: 600px) {
+  .img-div {
+    left: 40%;
+  }
+} */
+.tit {
+  width: 150px;
+  margin-left: -12px;
+}
+.logo {
+  animation: logo-spin infinite 20s linear;
+  height: 40vmin;
+  pointer-events: none;
+}
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.ghana {
+  display: absolute;
+  top: 10px;
+  left: -120px;
+  width: 30px;
+}
+.section1 {
+  margin-top: 220px;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+.message-body {
+  background-color: #282c34;
+}
+.anim:hover {
+    animation: move 0.5s cubic-bezier(.5,.05,1,.5);
+    animation-direction: alternate;
+    animation-iteration-count: 2;
+}
+@keyframes move {
+    from { transform: translate(0):}
+    to { transform: translate(100px);}
+}
+.anim {
+    animation: bounce 0.5s cubic-bezier(.5,.05,1,.5);
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+}
+@keyframes bounce {
+    from { transform: translate(0, 0, 0):}
+    to { transform: translate(7px);}
+}
+.work {
+  height: 20vh;
+}
+@media screen and (min-width: 800px) {
+.section2 {
+  margin: 50px;
+}
+.section3 {
+  margin: 50px;
+  margin-top: 90px;
+}
+.section2-mobile {
+  display: none;
+}
+}
+#navbar {
+  height: 4.5vh;
+  background-color: #a8aaad85;
+}
+.topbar {
+  padding-left: 20px;
+  font-size: 19px;
+}
+.links {
+  float: right;
+  padding-right: 20px;
+  font-size: 19px;
+  font-weight: 10;
+}

@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>ReactJS-Ghana</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <link rel="stylesheet" href="bulma/css/bulma.min.css" />
+    <link rel="stylesheet" href="fontawesome/css/all.css" />
+    <script src="jquery-3.3.1/dist/jquery.min.js"></script>
+    <style>
+      .box {
+        box-shadow: 0px 0px 5px 5px rgba(221, 219, 219, 0.432);
+      }
+      .empty, .empty2, .empty4, .empty3, .empty5 {
+        font-size: 20px;
+        font-family: cursive;
+        text-align: center;
+        color: rgba(200, 200, 204, 0.274);
+        justify-content: center;
+        margin-left: px;
+        margin-right: 0px;
+        margin-top: 0px;
+        margin-bottom: 0px;
+      }
+    </style>
+  </head>
+  <body>
+      <nav class="navba" id="navbar">
+            <span class="topbar">
+                <a class="has-text-light" href="#"
+                    ><i class="fa fa-pen"></i>
+                </a>
+                <!-- <a class="has-text-warning" href="#"
+                    ><i class="fab fa-twitter"></i>
+                </a>
+                <a class="has-text-success" href="#"
+                    ><i class="fab fa-facebook"></i>
+                </a> -->
+            </span>
+            <span class="links">
+                <a class="has-text-light title is-5" href="join.html"
+                    >JOIN US
+                </a>
+            </span>
+      </nav>
+    <div class="body">
+      <div class="image is-128x128 img-div">
+        <img class="logo" src="img/react.png" />
+        <div class="title is-4 has-text-danger tit">
+          React Ghana
+          <span class="title is-3" style="margin-right: 50px;">
+            <a class="has-text-danger" href="#"
+              ><i class="fab fa-github"></i>
+            </a>
+            <a class="has-text-warning" href="#"
+              ><i class="fab fa-twitter"></i>
+            </a>
+            <a class="has-text-success" href="#"
+              ><i class="fab fa-facebook"></i>
+            </a>
+          </span>
+        </div>
+      </div>
+      <img class="image ghana" src="img/gh.jpg" />
+
+      <!-- BODY -->
+      <section class="section1">
+        <div class="columns container">
+          <div class="column is-one-third">
+            <div class="message is-primary">
+              <div class="message-body">
+                <article class="has-text-light">
+                  <h1 class="title has-text-light">
+                    What is React
+                    <i class="fab fa-react anim has-text-primary"></i>
+                  </h1>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Tempore consectetur quod, assumenda sunt eos dolor repudiandae
+                  recusandae maxime ducimus non ipsa atque quaerat corporis
+                  modi, harum ex aliquid libero odio.
+                </article>
+              </div>
+            </div>
+          </div>
+          <div class="column">
+            <div class="message is-primary">
+              <div class="message-body">
+                <article class="has-text-light">
+                  <h1 class="title has-text-light">
+                    React Ghana
+                    <i class="fab fa-react anim has-text-warning"></i>
+                  </h1>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Tempore consectetur quod, assumenda sunt eos dolor repudiandae
+                  recusandae maxime ducimus non ipsa atque quaerat corporis
+                  modi, harum ex aliquid libero odio. Lorem ipsum dolor sit amet
+                  consectetur adipisicing elit. Tempore consectetur quod,
+                  assumenda sunt eos dolor repudiandae recusandae maxime ducimus
+                  non ipsa atque quaerat corporis modi, harum ex aliquid libero
+                  odio. recusandae maxime ducimus non ipsa atque quaerat
+                  corporis modi, harum ex aliquid libero odio. recusandae maxime
+                  ducimus non ipsa atque quaerat corporis modi.
+                </article>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section2">
+        <div class="columns ">
+          <div class="column is-three-quarters">
+            <div class="work">
+              <div class="message is-primary">
+                <div class="message-body">
+                  <article class="has-text-light">
+                    <p class="title has-text-light">Meet-Ups <i class="fa fa-users"></i></p>
+                    <div class="columns is-multiline" id="meetings">
+                            <div class='empty'>NO MEETINGS </div>
+                      <!-- <div class="column is-one-quarter">
+                                <div id="box" class="box">
+                                    <div class="image is-5by3">
+                                        <img src="img/gh-flag.jpg" />
+                                    </div>
+                                    <span class="title is-5" id="title">Accra Conferrence</span>
+                                    <a href="#" ><span>Read more...</span></a>
+                                </div>
+                        </div> -->
+                    </div>
+                  </article>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="column">
+            <div class="columns is-multiline">
+              <div class="column is-full">
+                <div class="message is-primary">
+                  <div class="message-body">
+                    <article class="has-text-light">
+                      <p class="title has-text-light" id="news">News <i class="fa fa-newspaper"></i></p>
+                      <div class='empty2'>NO NEWS</div>
+                      <!-- <div>
+                          <article class="has-text-light">
+                              <header class="title has-text-light">'+title+'</header>
+                              '+detail+'
+                              <a href="'+newLink+'">read more ...</a>
+                          </article>
+                          <p>----------------------</p>
+                      </div> -->
+                    </article>
+                  </div>
+                </div>
+              </div>
+              <div class="column">
+                <div class="message is-primary">
+                  <div class="message-body">
+                    <article class="has-text-light">
+                      <p class="title has-text-light" id="job">JobBoard <i class="fa fa-briefcase"></i></p>
+                      <div class='empty3'>NO JOBS</div>
+                      <!-- <div>
+                            <article class="has-text-light">
+                                <header class="title has-text-light">'+jobTitle+'</header>
+                                '+jobDetail+'
+                                <a href="'+jobLink+'">read more ...</a>
+                            </article>
+                            <p>----------------------</p>
+                        </div> -->
+                    </article>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      
+
+      <section class="section2-mobile">
+            <div class="columns ">
+                    <div class="column is-three-quarters">
+                      <div class="work">
+                        <div class="message is-primary">
+                          <div class="message-body">
+                            <article class="has-text-light">
+                              <p class="title has-text-light">Meet-Ups</p>
+                              <div class="columns is-multiline" id="meetings">
+                                    <div class='empty'>NO MEETINGS</div>
+                                <!-- <div class="column is-one-quarter">
+                                          <div id="box" class="box">
+                                              <div class="image is-5by3">
+                                                  <img src="img/gh-flag.jpg" />
+                                              </div>
+                                              <span class="title is-5" id="title">Accra Conferrence</span>
+                                              <a href="#" ><span>Read more...</span></a>
+                                          </div>
+                                  </div> -->
+                              </div>
+                            </article>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                        <div class="column">
+                          <div class="message is-primary">
+                            <div class="message-body">
+                              <article class="has-text-light">
+                                <p class="title has-text-light">News</p>
+                                No News
+                              </article>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="column">
+                          <div class="message is-primary">
+                            <div class="message-body">
+                              <article class="has-text-light">
+                                <p class="title has-text-light">Career Board</p>
+                                No Jobs
+                              </article>
+                            </div>
+                          </div>
+                        </div>
+            </div>
+      </section>
+
+      <section class="section3">
+          <div class="columns">
+                <div class="column is-three-quarters">
+                    <div class="message is-primary">
+                        <div class="message-body">
+                            <article class="has-text-light">
+                            <p class="title has-text-light">ReactGhana Team <i class="fa fa-user-friends"></i></p>
+                            <div class="columns is-multiline" id="team">
+                                    <div class='empty4'>NO TEAM</div>
+                                <!-- <div class="column is-half">
+                                    <div class="image is-5by3">
+                                        <img src="'+imgURL+'" />
+                                    </div>
+                                    <span>'+twitter+'</span><br>
+                                    <p class="title is-4 has-text-success">'teamName'</p>
+                                    '+about+'
+                                </div> -->
+                            </div>
+                            
+                            </article>
+                        </div>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="message is-primary">
+                        <div class="message-body">
+                            <article class="has-text-light">
+                            <p class="title has-text-light">Sponsors <i class="fa fa-link"></i></p>
+                            <div class="columns is-multiline" id="sponsor">
+                                    <div class='empty5'>NO SPONSORS</div>
+                                <!-- <div class="column is-one-quarter">
+                                    <div class="image is-128x128">
+                                        <img src="'+imgURL+'" />
+                                    </div>
+                                </div> -->
+                            </div>
+                            </article>
+                        </div>
+                    </div>
+                </div>
+          </div>
+      </section>
+    </div>
+
+    <script src="main.js"></script>
+  </body>
+</html>
